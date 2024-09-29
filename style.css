@@ -2,6 +2,8 @@ html,body{
     height: 100vh;
     padding: 0;
     margin: 0;
+    background-color: rgb(248, 239, 236);
+    /* background-color: rgba(248,247,242,255); */
 }
 
 .wrapper {
@@ -17,8 +19,13 @@ main{
 /* ----------------------------------------------NAV-BAR------------------------------------------------- */
 
 .header{
-    padding: 0 30px;
-    padding-top: 5px;
+    padding: 20px 140px 20px;
+    position: fixed;
+    width: 78%;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(248, 239, 236);
 }
 
 .row{
@@ -35,9 +42,10 @@ main{
     display: flex;
     flex-basis:100px;
     font-family: "Saira", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
     flex-direction: column;
+    letter-spacing: 2px;
 }
 
 .name .studio {
@@ -81,7 +89,7 @@ main{
 .row .nav ul button {
     font-family: "Fredoka", sans-serif;
     letter-spacing: 1px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.1rem;
     padding: 5px 15px;
     border: 1px solid rgb(190,88,89);
@@ -89,6 +97,7 @@ main{
     background-color: rgb(190,88,89);
     color: white;
     cursor: pointer;
+    outline: 0;
 }
 
 .row .nav ul button:hover {
@@ -98,42 +107,160 @@ main{
 
 /* -------------------------------MAIN-BODY------------------------- */
 
-.body {
-    padding-left: 30px;
-    height: 80vh;
+.landing {
+    padding: 0 140px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.body p {
+.landing p {
     font-family: "Noto Sans", sans-serif;
 }
 
-.body .first {
-    margin-top: 70px;
+.landing .first {
+    margin-top: 160px;
     margin-bottom: 0;
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 1px;
 }
 
-.body .sarvesh {
+.landing .sarvesh {
     font-size: 4.2rem;
     color: rgba(205,59,57,255);
     font-family: "Orbitron", sans-serif;
+    font-weight: 100;
 }
 
-.body .address {
+.landing .address {
     font-size: 1.5rem;
     letter-spacing: 3px;
     color: rgb(113, 112, 112);
-    /* font-family: "Saira", sans-serif; */
     font-family: "Orbitron", sans-serif;
+    font-weight: 200;
 }
 
-.body .second {
+.landing .second {
     margin-top: 35px;
     font-size: 2rem;
     letter-spacing: 1px;
+}
+
+/* ---------------------------MY-WORK-------------------------- */
+
+.my_work{
+    height: fit-content;
+    flex-direction: column;
+    display: flex;
+}
+
+.my_work > h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 2.7rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+}
+
+.project1 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project1 .card {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 35px;
+}
+
+.card img {
+    border-radius: 10px;
+    height: 550px;
+}
+
+.card h1 {
+    margin-top: 0;
+    margin-bottom: 48px;
+    letter-spacing: 3px;
+    font-size: 2.1rem;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 400;
+}
+
+.card p {
+    /* margin-top: 5px; */
+    margin-bottom: 0;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    font-family: "Fredoka", sans-serif;
+    font-weight: 100;
+}
+
+/* ------------------------------THANKYOU------------------------------------------------- */
+
+.thankyou {
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid black;
+}
+
+.thankyou p {
+    margin: 150px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: 100%;
+    text-align: center;
+    padding: 0 140px;
+}
+
+/* -------------------------------Footer---------------------------------------- */
+
+.footer {
+    padding: 100px 140px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .vertical-hr {
+    margin-left: 20px;
+}
+
+.footer .icons {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.icons svg {
+    width: 30px;
+    height: 30px;
+    color: grey;
+}
+
+.icons svg:hover {
+    color:  rgb(190,88,89);
+}
+
+.footer .insta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
