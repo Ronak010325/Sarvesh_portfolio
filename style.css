@@ -35,7 +35,7 @@ main{
 .logo{
     display: flex;
     width: fit-content;
-    cursor: default;
+    cursor: pointer;
 }
 
 .logo .name {
@@ -67,7 +67,7 @@ main{
     display: flex;
     gap: 25px;
     margin-top: 10px;
-    cursor: pointer;
+    cursor: default;
     font-family: "Fredoka", sans-serif;
     letter-spacing: 1px;
     list-style: none;
