@@ -35,7 +35,7 @@ main{
 .logo{
     display: flex;
     width: fit-content;
-    cursor: pointer;
+    cursor: default;
 }
 
 .logo .name {
