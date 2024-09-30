@@ -1,0 +1,40 @@
+
+.footer {
+    padding: 100px 140px;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .vertical-hr {
+    margin-left: 20px;
+}
+
+.footer .icons {
+    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.icons svg {
+    width: 30px;
+    height: 30px;
+    color: grey;
+}
+
+.icons svg:hover {
+    color:  rgb(190,88,89);
+}
+
+.footer .insta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
